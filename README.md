@@ -1,0 +1,1 @@
+# EquiFood-TeamA-GitHub-Exercise
