@@ -38,7 +38,7 @@ public class AppTest
     {
         List<Integer> list = Arrays.asList(1,5,2,3,7,6,4);
         App.arraySort(list, 4);
-        List<Integer> sortedlist = Arrays.asList(1,2,3,5,7);
+        List<Integer> sortedlist = Arrays.asList(1,2,3,0,5,0,7);
         assertEquals(sortedlist, list);
 
     }

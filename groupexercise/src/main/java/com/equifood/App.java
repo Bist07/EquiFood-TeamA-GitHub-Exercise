@@ -20,24 +20,32 @@ public class App
         if(modification == 1){
             Collections.reverse(list);
         }
+
+
         if(modification == 4){   //Function to remove all non-prime numbers from the list NOT COMPLETE
-            
            int ListLength = list.size();
-            for(int i = 0; i < ListLength; i++){
-               int n = list.get(i);
-                for(int m = 2; m < n; m++){
-                    if(n%m == 0){
-                        list.remove(i);
-                    }
+           boolean isPrime = false;
+         for(int i=0; i<ListLength; i++){
+            isPrime= prime(list.get(i));
+            if(isPrime){
+            }else{
+                list.set(i, 0);   //Replaces all composite numbers with zero
                 }
-                
             }
-
-            System.out.println(list);
-        }
-
-        return list;
+         }
+         return list;
     }
+        
+       static boolean prime(int n){
+        for(int i=2; i<n; i++){
+            if(n%i==0)      //returns true if number is prime
+            return false;
+        }
+        return true;
+       } 
+       
+      
+
 
     // Asks user for integers separated by spaces then returns list
     public static List<Integer> userInput(Scanner scanner){
