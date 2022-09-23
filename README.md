@@ -5,4 +5,4 @@ Maven structured app that asks the user to input integers separated by spaces (e
     1 - Returns sorted array in reverse order <br/>
     2 - Returns sorted array of odd numbers <br/>
     3 - Returns sorted array of even numbers <br/>
-    4 - Returns sorted array of prime numbers <br/>
+    4 - Returns sorted array of prime numbers: This function loops through the users inputed list and checks to ensure the number is prime. If the number is not prime it is removed from the list.  <br/>
