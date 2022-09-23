@@ -16,10 +16,6 @@ public class App
 
     public static List<Integer> arraySort(List<Integer> list, int modification){
         Collections.sort(list);
-        // add modifications here
-        if(modification == 1){
-            Collections.reverse(list);
-        }
         
         //Return sorted array of odd numbers:
         if(modification == 2){

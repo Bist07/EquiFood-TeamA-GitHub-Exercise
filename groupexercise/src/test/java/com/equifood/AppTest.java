@@ -26,14 +26,6 @@ public class AppTest
         assertEquals(sortedlist, list);
     }
     @Test
-    public void Reverse_Modification_Returns_Reversed_List()
-    {
-        List<Integer> list = Arrays.asList(1,5,2,3,7);
-        App.arraySort(list,1);
-        List<Integer> sortedlist = Arrays.asList(7,5,3,2,1);
-        assertEquals(sortedlist, list);
-    }
-    @Test
     public void Odd_Modification_Returns_Odd_List()
     {
         List<Integer> list = Arrays.asList(1,5,2,3,7);
