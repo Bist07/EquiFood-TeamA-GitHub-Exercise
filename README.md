@@ -1,6 +1,7 @@
 # EquiFood-TeamA-GitHub-Exercise
 
 Maven structured app that asks the user to input integers separated by spaces (eg: "1 2 5 7 3") then returns a sorted list of the numbers. After the integers are added, the user is prompted for a modification. The modifications are as follows:
+
     0 - Returns sorted array
     1 - Returns sorted array in reverse order
     2 - Returns sorted array of odd numbers
