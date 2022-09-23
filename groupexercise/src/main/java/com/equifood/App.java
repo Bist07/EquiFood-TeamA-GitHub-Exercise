@@ -20,7 +20,19 @@ public class App
         if(modification == 1){
             Collections.reverse(list);
         }
+        
+        //Return sorted array of odd numbers:
+        if(modification == 2){
+            for(int i=0;i<list.size();i++){
+                if(list.get(i) % 2 != 1){
+                    list.remove(i);
+                }
+            }
+        }
+
+
         return list;
+
     }
 
     // Asks user for integers separated by spaces then returns list
