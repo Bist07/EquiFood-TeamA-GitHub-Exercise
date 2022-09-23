@@ -20,6 +20,22 @@ public class App
         if(modification == 1){
             Collections.reverse(list);
         }
+        if(modification == 4){   //Function to remove all non-prime numbers from the list NOT COMPLETE
+            
+           int ListLength = list.size();
+            for(int i = 0; i < ListLength; i++){
+               int n = list.get(i);
+                for(int m = 2; m < n; m++){
+                    if(n%m == 0){
+                        list.remove(i);
+                    }
+                }
+                
+            }
+
+            System.out.println(list);
+        }
+
         return list;
     }
 
@@ -81,6 +97,11 @@ public class App
             output = arraySort(list, mod);
             System.out.println(output);
         }
+
+
+    
+        
+
     }
 
 

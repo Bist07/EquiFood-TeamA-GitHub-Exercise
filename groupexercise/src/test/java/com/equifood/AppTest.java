@@ -33,4 +33,13 @@ public class AppTest
         List<Integer> sortedlist = Arrays.asList(7,5,3,2,1);
         assertEquals(sortedlist, list);
     }
+    @Test
+    public void Prime_Modification_Returns_Sorted_Primes()  //Basic test to check Prim number puller
+    {
+        List<Integer> list = Arrays.asList(1,5,2,3,7,6,4);
+        App.arraySort(list, 4);
+        List<Integer> sortedlist = Arrays.asList(1,2,3,5,7);
+        assertEquals(sortedlist, list);
+
+    }
 }
