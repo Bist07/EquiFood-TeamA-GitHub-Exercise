@@ -21,7 +21,7 @@ public class App
         if(modification == 1){
             Collections.reverse(list);
         }
-        
+
         //Return sorted array of odd numbers:
         if(modification == 2){
             for(int i=0;i<list.size();i++){
@@ -31,10 +31,32 @@ public class App
             }
         }
 
+        if(modification == 4){   //Function to remove all non-prime numbers from the list NOT COMPLETE
+           int ListLength = list.size();
+           boolean isPrime = false;
+         for(int i=0; i<ListLength; i++){
+            isPrime= prime(list.get(i));
+            if(isPrime){
+            }else{
+                list.set(i, 0);   //Replaces all composite numbers with zero
+                }
+            }
+        }
 
         return list;
 
     }
+        
+       static boolean prime(int n){
+        for(int i=2; i<n; i++){
+            if(n%i==0)      //returns true if number is prime
+            return false;
+        }
+        return true;
+       } 
+       
+      
+
 
     // Asks user for integers separated by spaces then returns list
     public static List<Integer> userInput(Scanner scanner){
@@ -70,7 +92,7 @@ public class App
         int mod;
         mod = scanner.nextInt();
 
-        while(mod < 0 || mod >= 4){
+        while(mod < 0 || mod > 4){
             System.out.println("Please enter a valid modification between 0-4");
             mod = scanner.nextInt();
         }
@@ -94,6 +116,11 @@ public class App
             output = arraySort(list, mod);
             System.out.println(output);
         }
+
+
+    
+        
+
     }
 
 
