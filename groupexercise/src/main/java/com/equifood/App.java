@@ -16,11 +16,20 @@ public class App
 
     public static List<Integer> arraySort(List<Integer> list, int modification){
         Collections.sort(list);
+        
         // add modifications here
         if(modification == 1){
             Collections.reverse(list);
         }
 
+        //Return sorted array of odd numbers:
+        if(modification == 2){
+            for(int i=0;i<list.size();i++){
+                if(list.get(i) % 2 != 1){
+                    list.remove(i);
+                }
+            }
+        }
 
         if(modification == 4){   //Function to remove all non-prime numbers from the list NOT COMPLETE
            int ListLength = list.size();
@@ -32,8 +41,10 @@ public class App
                 list.set(i, 0);   //Replaces all composite numbers with zero
                 }
             }
-         }
-         return list;
+        }
+
+        return list;
+
     }
         
        static boolean prime(int n){
@@ -81,7 +92,7 @@ public class App
         int mod;
         mod = scanner.nextInt();
 
-        while(mod < 0 || mod >= 4){
+        while(mod < 0 || mod > 4){
             System.out.println("Please enter a valid modification between 0-4");
             mod = scanner.nextInt();
         }
