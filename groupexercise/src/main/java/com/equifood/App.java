@@ -27,6 +27,7 @@ public class App
             for(int i=0;i<list.size();i++){
                 if(list.get(i) % 2 != 1){
                     list.remove(i);
+
                 }
             }
         }
@@ -35,7 +36,8 @@ public class App
         if(modification == 3){
             for(int i=0;i<list.size();i++){
                 if(list.get(i) % 2 != 0){
-                    list.remove(i);
+                    list.set(i, 0)
+                   ;
                 }
             }
         }

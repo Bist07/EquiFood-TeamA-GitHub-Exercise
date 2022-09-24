@@ -43,4 +43,14 @@ public class AppTest
         List<Integer> sortedlist = Arrays.asList(1,3,5,7);
         assertEquals(sortedlist, list);
     }
+
+    @Test
+    public void Even_Modification_Returns_Even_List()
+    {
+        List<Integer> list = Arrays.asList(1,5,2,3,7);
+        App.arraySort(list,3);
+        List<Integer> sortedlist = Arrays.asList(0,2,0,0,0);
+        assertEquals(sortedlist, list);
+    }
+
 }
