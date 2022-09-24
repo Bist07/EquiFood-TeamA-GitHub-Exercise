@@ -27,6 +27,7 @@ public class App
             for(int i=0;i<list.size();i++){
                 if(list.get(i) % 2 != 1){
                     list.remove(i);
+
                 }
             }
         }
@@ -39,6 +40,15 @@ public class App
             if(isPrime){
             }else{
                 list.set(i, 0);   //Replaces all composite numbers with zero
+                }
+            }
+        }
+        //Return sorted array of even numbers:
+        if(modification == 3){
+            for(int i=0;i<list.size();i++){
+                if(list.get(i) % 2 != 0){
+                    list.set(i, 0)
+                   ;
                 }
             }
         }
